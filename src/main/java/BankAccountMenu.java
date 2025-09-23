@@ -13,6 +13,7 @@ public class BankAccountMenu {
             System.out.println("2. Withdraw Money");
             System.out.println("3. Check Balance");
             System.out.println("4. Exit");
+            System.out.println();
             System.out.println("Enter your choice: ");
             choice = sc.nextInt();
 
@@ -20,12 +21,15 @@ public class BankAccountMenu {
             case 1:
                 System.out.println("Enter amount to add: ");
                 add = sc.nextInt();
+                System.out.println();
                 balance = balance + add;
                 System.out.println("Added $" + add);
+                System.out.println();
                 System.out.println("New Balance: $" + balance);
                 break;
             case 2:
                 System.out.println("Enter amount to withdraw: ");
+                System.out.println();
                 withdraw = sc.nextInt();
                 if (withdraw > balance){
                     System.out.println("Insufficient Funds");
@@ -33,12 +37,15 @@ public class BankAccountMenu {
                 else {
                     balance = balance - withdraw;
                     System.out.println("Withdraw $" + withdraw);
+                    System.out.println();
                     System.out.println("New Balance: $" + balance);
+                    System.out.println();
                 }
                 break;
 
             case 3:
                 System.out.println("Balance is: $" + balance);
+                System.out.println();
                 break;
             case 4:
                 run = false;
