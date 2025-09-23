@@ -27,9 +27,14 @@ public class BankAccountMenu {
             case 2:
                 System.out.println("Enter amount to withdraw: ");
                 withdraw = sc.nextInt();
-                balance = balance - withdraw;
-                System.out.println("Withdraw " + withdraw);
-                System.out.println("New Balance: " + balance);
+                if (withdraw > balance){
+                    System.out.println("Insufficient Funds");
+            }
+                else {
+                    balance = balance - withdraw;
+                    System.out.println("Withdraw " + withdraw);
+                    System.out.println("New Balance: " + balance);
+                }
                 break;
 
             case 3:
