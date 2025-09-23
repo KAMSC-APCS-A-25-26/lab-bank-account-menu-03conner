@@ -8,7 +8,7 @@ public class BankAccountMenu {
         balance = 0;
         Scanner sc= new Scanner(System.in);
         while (run){
-            System.out.println("---Bank Accout Money---");
+            System.out.println("---Bank Account Money---");
             System.out.println("1. Add Money");
             System.out.println("2. Withdraw Money");
             System.out.println("3. Check Balance");
@@ -36,7 +36,6 @@ public class BankAccountMenu {
                 else {
                     balance = balance - withdraw;
                     System.out.println("New Balance: $" + balance);
-                    System.out.println();
                 }
                 break;
 
