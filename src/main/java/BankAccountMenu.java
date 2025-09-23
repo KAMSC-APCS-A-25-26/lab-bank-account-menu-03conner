@@ -23,9 +23,8 @@ public class BankAccountMenu {
                 add = sc.nextInt();
                 System.out.println();
                 balance = balance + add;
-                System.out.println("Added $" + add);
-                System.out.println();
                 System.out.println("New Balance: $" + balance);
+                System.out.println();
                 break;
             case 2:
                 System.out.println("Enter amount to withdraw: ");
@@ -36,8 +35,6 @@ public class BankAccountMenu {
             }
                 else {
                     balance = balance - withdraw;
-                    System.out.println("Withdraw $" + withdraw);
-                    System.out.println();
                     System.out.println("New Balance: $" + balance);
                     System.out.println();
                 }
